@@ -31,6 +31,7 @@ print()
 print("Hi, my name is Peri de Meterous or Peri for short")
 print("Please enter the following...")
 
+# Loop the whole code
 go_again = ""
 while go_again == "": 
     
@@ -43,7 +44,7 @@ while go_again == "":
 
     # Calculate Area
     area = width * height
-    
+ # Outputs rounded to 2 decimal places   
     print()
     print("The Perimeter is {:.2f}".format(perimeter))
     print("The Area is {:.2f}".format(area))
