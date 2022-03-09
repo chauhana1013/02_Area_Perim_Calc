@@ -26,16 +26,31 @@ def num_check(question):
 
 
 
-# Main Routine goes here 
-width = num_check("Width: ")
-height = num_check("Height: ")
+# Main Routine goes here
+print()
+print("Hi, my name is Peri de Meterous or Peri for short")
+print("Please enter the following...")
 
-# Calculate Perimeter
-perimeter = (width * 2) + (height * 2)
+go_again = ""
+while go_again == "": 
+    
+    print()
+    width = num_check("Width: ")
+    height = num_check("Height: ")
 
-# Calculate Area
-area = width * height
+    # Calculate Perimeter
+    perimeter = 2 * (height + width)
+
+    # Calculate Area
+    area = width * height
+    
+    print()
+    print("The Perimeter is {:.2f}".format(perimeter))
+    print("The Area is {:.2f}".format(area))
+    print("Have a nice day")
+    print()
+
+    go_again = input("Press <enter> to calculate again or any key to stop")
 
 print()
-print("The Perimeter is {} units and the Area is {} squared units".format(perimeter, area))
-print()
+print("Glad to help you, see you next time")
